@@ -1,5 +1,0 @@
--e .
-aws-cdk.aws_lambda
-aws-cdk.aws_iam
-aws-cdk.aws_events
-aws-cdk.aws_events_targets
