@@ -9,4 +9,6 @@
 
 3. **EC2_INSTANCE_NO_PUBLIC_IP** When you deploy this template on CFN, AWS will create a config rule "ec2-instance-no-public-ip" and then deploy remediation action which will stop all the instances with public IPs
 
-4. **APPROVED_AMIS_BY_ID & Tags**: These templates will deploy rules which takes AMI ID or Tags as input parameter and further uses SSM documents to turn of the non compliant EC2 instances as a remediation.
+4 & 5. **APPROVED_AMIS_BY_ID & Tags**: These templates will deploy rules which takes AMI ID or Tags as input parameter and further uses SSM documents to turn of the non compliant EC2 instances as a remediation.
+
+6. ****
