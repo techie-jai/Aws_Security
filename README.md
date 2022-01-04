@@ -11,4 +11,4 @@
 
 4 & 5. **APPROVED_AMIS_BY_ID & Tags**: These templates will deploy rules which takes AMI ID or Tags as input parameter and further uses SSM documents to turn of the non compliant EC2 instances as a remediation.
 
-6. ****
+6. **automate-cloudtrail-monitoring-alert**: After deploying this template, if someone stops CloudTrail logging, you'll get an SNS notification about the same and lambda function will restart the logging.
