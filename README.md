@@ -12,3 +12,5 @@
 4 & 5. **APPROVED_AMIS_BY_ID & Tags**: These templates will deploy rules which takes AMI ID or Tags as input parameter and further uses SSM documents to turn of the non compliant EC2 instances as a remediation.
 
 6. **automate-cloudtrail-monitoring-alert**: After deploying this template, if someone stops CloudTrail logging, you'll get an SNS notification about the same and lambda function will restart the logging.
+
+9. security-automation-remediate-unintended-iam-access-master: This will create a lambda function which will be invoked by a even bridge which gets its events from cloudtrail. So if somebody does something like creating a user, the event bridge will match it and invoke the lambda which will further attach an deny all policy to that IAM user if the user was not found to be part of an IAM admin group. Check this: https://github.com/miztiik/security-automation-remediate-unintended-iam-access
