@@ -20,3 +20,4 @@
 
 **10. security-automation-remediate-weak-s3-policy.template.json** : This template will deploy lambda which triggers everytime a policy is changed. It then checks the previous policy and reverts back to the original policy. uses config, event bridge etc. https://github.com/miztiik/security-automation-remediate-weak-s3-policy
 
+**11. security-automation-respond-to-failed-ssh-access.template.json**: This template deploys a lambda which is susbcribed to CloudWatch logs which are being sent by CloudWatch agents installed on the EC2 instance being monitored for the ssh attack. https://github.com/miztiik/security-automation-respond-to-failed-ssh-access
