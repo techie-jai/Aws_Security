@@ -17,3 +17,6 @@
 **
 
 **8 .remove-unused-security-groups.template**: This template deploys a lambda which is triggered weekly. Once triggered, it will first create a list of all the secruity grioups in the account, then it will exclude the once which are currently attached to an Ec2 and then removes the once that are left ie that are not attached to any ec2. This then returns a string with all the deleted security group list. THis gets triggered by a cloudwatch event weekly.
+
+**10. security-automation-remediate-weak-s3-policy.template.json** : This template will deploy lambda which triggers everytime a policy is changed. It then checks the previous policy and reverts back to the original policy. uses config, event bridge etc. https://github.com/miztiik/security-automation-remediate-weak-s3-policy
+
